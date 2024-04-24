@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace WeProDev\LaraNav\Provider;
 
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use WeProDev\LaraNav\Facade\LNavService;
@@ -22,10 +21,10 @@ final class LaraNavServiceProvider extends ServiceProvider
 
         $publishes = [
             // configuration
-            __DIR__.'/../Config/laranav.php' => Config::path('laranav.php'),
+            __DIR__ . '/../Config/laranav.php' => config_path('laranav.php'),
 
             // Resources
-            __DIR__.sprintf('./../Resource/layouts') => resource_path(sprintf('views/%s/layouts', self::$LNav_Path)),
+            __DIR__ . sprintf('/../Resource/layouts') => resource_path(sprintf('views/%s/layouts', self::$LNav_Path)),
 
         ];
         $this->publishes($publishes);
