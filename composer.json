@@ -15,7 +15,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Weprodev\\LaraNav\\": "src/"
+      "WeProDev\\LaraNav\\": "src/"
     }
   },
   "authors": [

@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use WeProDev\LaraPanel\Core\User\Enum\NavLinkTypeEnum;
-use WeProDev\LaraPanel\Core\User\Enum\NavLocationEnum;
+use WeProDev\LaraNav\Enum\NavLinkTypeEnum;
+use WeProDev\LaraNav\Enum\NavLocationEnum;
 
 return [
 

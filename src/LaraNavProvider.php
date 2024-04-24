@@ -7,7 +7,7 @@ namespace WeProDev\LaraNav;
 use Illuminate\Support\ServiceProvider;
 use WeProDev\LaraNav\Provider\LaraNavServiceProvider;
 
-final class LaraPanelProvider extends ServiceProvider
+final class LaraNavProvider extends ServiceProvider
 {
     public function boot(): void
     {

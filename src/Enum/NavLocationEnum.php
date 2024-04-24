@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WeProDev\LaraPanel\Core\User\Enum;
+namespace WeProDev\LaraNav\Enum;
 
 enum NavLocationEnum: string
 {
