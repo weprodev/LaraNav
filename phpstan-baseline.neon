@@ -1,0 +1,76 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Function __ not found\\.$#"
+			count: 13
+			path: src/Config/laranav.php
+
+		-
+			message: "#^Access to an undefined property WeProDev\\\\LaraNav\\\\LaraPanelProvider\\:\\:\\$app\\.$#"
+			count: 1
+			path: src/LaraNavProvider.php
+
+		-
+			message: "#^Access to an undefined property WeProDev\\\\LaraNav\\\\Provider\\\\LaraNavServiceProvider\\:\\:\\$app\\.$#"
+			count: 1
+			path: src/Provider/LaraNavServiceProvider.php
+
+		-
+			message: "#^Call to an undefined method WeProDev\\\\LaraNav\\\\Provider\\\\LaraNavServiceProvider\\:\\:loadJsonTranslationsFrom\\(\\)\\.$#"
+			count: 2
+			path: src/Provider/LaraNavServiceProvider.php
+
+		-
+			message: "#^Call to an undefined method WeProDev\\\\LaraNav\\\\Provider\\\\LaraNavServiceProvider\\:\\:publishes\\(\\)\\.$#"
+			count: 1
+			path: src/Provider/LaraNavServiceProvider.php
+
+		-
+			message: "#^Call to static method path\\(\\) on an unknown class Illuminate\\\\Support\\\\Facades\\\\Config\\.$#"
+			count: 1
+			path: src/Provider/LaraNavServiceProvider.php
+
+		-
+			message: "#^Call to static method share\\(\\) on an unknown class Illuminate\\\\Support\\\\Facades\\\\View\\.$#"
+			count: 1
+			path: src/Provider/LaraNavServiceProvider.php
+
+		-
+			message: "#^Function base_path not found\\.$#"
+			count: 1
+			path: src/Provider/LaraNavServiceProvider.php
+
+		-
+			message: "#^Function resource_path not found\\.$#"
+			count: 1
+			path: src/Provider/LaraNavServiceProvider.php
+
+		-
+			message: "#^Function view not found\\.$#"
+			count: 1
+			path: src/Provider/LaraNavServiceProvider.php
+
+		-
+			message: "#^Method WeProDev\\\\LaraNav\\\\Provider\\\\LaraNavServiceProvider\\:\\:boot\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Provider/LaraNavServiceProvider.php
+
+		-
+			message: "#^Method WeProDev\\\\LaraNav\\\\Provider\\\\LaraNavServiceProvider\\:\\:loadLaraNavDataOnViewPages\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Provider/LaraNavServiceProvider.php
+
+		-
+			message: "#^Method WeProDev\\\\LaraNav\\\\Provider\\\\LaraNavServiceProvider\\:\\:provides\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Provider/LaraNavServiceProvider.php
+
+		-
+			message: "#^Method WeProDev\\\\LaraNav\\\\Provider\\\\LaraNavServiceProvider\\:\\:register\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Provider/LaraNavServiceProvider.php
+
+		-
+			message: "#^Method WeProDev\\\\LaraNav\\\\Provider\\\\LaraNavServiceProvider\\:\\:registerTranslations\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/Provider/LaraNavServiceProvider.php
