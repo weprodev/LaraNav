@@ -6,7 +6,7 @@ namespace WeProDev\LaraNav\Provider;
 
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-use WeProDev\LaraNav\Facade\LNavService;
+use WeProDev\LaraNav\Service\LNavService;
 
 final class LaraNavServiceProvider extends ServiceProvider
 {
@@ -21,10 +21,13 @@ final class LaraNavServiceProvider extends ServiceProvider
 
         $publishes = [
             // configuration
-            __DIR__ . '/../Config/laranav.php' => config_path('laranav.php'),
+            __DIR__.'/../Config/laranav.php' => config_path('laranav.php'),
+
+            // Service
+            __DIR__.'/../Stub/LNavService.php' => app_path(sprintf('Http/Controllers/LaraNav')),
 
             // Resources
-            __DIR__ . sprintf('/../Resource/layouts') => resource_path(sprintf('views/%s/layouts', self::$LNav_Path)),
+            __DIR__.sprintf('/../Resource/layouts') => resource_path(sprintf('views/%s/layouts', self::$LNav_Path)),
 
         ];
         $this->publishes($publishes);
