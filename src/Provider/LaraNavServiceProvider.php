@@ -24,7 +24,7 @@ final class LaraNavServiceProvider extends ServiceProvider
             __DIR__.'/../Config/laranav.php' => config_path('laranav.php'),
 
             // Service
-            __DIR__.'/../Stub/LNavService.php' => app_path(sprintf('Http/Controllers/LaraNav')),
+            __DIR__.'/../Stub/LNavService.php' => app_path(sprintf('Http/Controllers/LaraNav/LNavService.php')),
 
             // Resources
             __DIR__.sprintf('/../Resource/layouts') => resource_path(sprintf('views/%s/layouts', self::$LNav_Path)),
