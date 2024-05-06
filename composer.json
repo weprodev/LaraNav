@@ -2,10 +2,10 @@
   "name": "weprodev/laranav",
   "description": "LaraNav will manage navigation app",
   "license": "MIT",
-  "type": "project",
+  "type": "package",
   "homepage": "https://weprodev.com/docs/laranav",
   "keywords": [
-    "Project",
+    "package",
     "LaraNav",
     "laraval",
     "Laravel Navigation",

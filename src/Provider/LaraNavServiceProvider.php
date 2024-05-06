@@ -23,14 +23,14 @@ final class LaraNavServiceProvider extends ServiceProvider
 
         // CONFIGURATION
         $this->publishes([
-            __DIR__ . '/../Config/laranav.php' => config_path('laranav.php'),
+            __DIR__.'/../Config/laranav.php' => config_path('laranav.php'),
             // Service
-            __DIR__ . '/../Stub/LNavService.php' => app_path(sprintf('Http/Controllers/LaraNav/LNavService.php')),
+            __DIR__.'/../Stub/LNavService.php' => app_path(sprintf('Http/Controllers/LaraNav/LNavService.php')),
         ], [$this->publishGenericName, 'laranav-config']);
 
         // RESOURCE PurpleAdmin
         $this->publishes([
-            __DIR__ . sprintf('/../Resource/theme/PurpleAdmin') => resource_path(sprintf('views/%s/PurpleAdmin', self::$LNav_Path)),
+            __DIR__.sprintf('/../Resource/theme/PurpleAdmin') => resource_path(sprintf('views/%s/PurpleAdmin', self::$LNav_Path)),
         ], [$this->publishGenericName, 'laranav-view-PurpleAdmin']);
     }
 
@@ -39,7 +39,7 @@ final class LaraNavServiceProvider extends ServiceProvider
         view()->composer('*', function ($view) {
             View::share([
                 'ln' => [
-                    'nav' => config('laranav.nav')
+                    'nav' => config('laranav.nav'),
                 ],
             ]);
         });
