@@ -5,6 +5,16 @@ You can define menu navigation and managing menu items in the config file.
 
 # Installing
 
+```
+composer require weprodev/laranav
+```
+
+and publish config files
+
+```
+php artisan vendor:publish --provider="WeProDev\LaraNav\Provider\LaraNavServiceProvider"
+```
+
 # How to use
 
 After publishing the package, you can see an example in the blade files like below:
