@@ -13,7 +13,7 @@ return [
         // laranav.default.directory
         'directory' => 'LaraNav',
         // laranav.default.theme
-        'theme' => 'LaraNav',
+        'theme' => 'PurpleAdmin',
     ],
 
     // laranav.nav
@@ -25,12 +25,9 @@ return [
                 'url' => '/',
                 'permission' => null,
                 'active' => true,
-                'attributes' => [
-                    'class' => 'nav-link',
-                ],
-                'parent_attributes' => [
-                    'class' => 'nav-item',
-                ],
+                'icon' => null,
+                'attributes' => [],
+                'parent_attributes' => [],
                 'children' => [],
                 'depth' => 0,
             ],
@@ -40,12 +37,9 @@ return [
                 'url' => '#',
                 'permission' => null,
                 'active' => true,
-                'attributes' => [
-                    'class' => 'nav-link',
-                ],
-                'parent_attributes' => [
-                    'class' => 'nav-item',
-                ],
+                'icon' => null,
+                'attributes' => [],
+                'parent_attributes' => [],
                 'children' => [
                     [
                         'title' => 'About Us',
@@ -53,12 +47,9 @@ return [
                         'url' => '/about-us',
                         'permission' => null,
                         'active' => true,
-                        'attributes' => [
-                            'class' => 'nav-link',
-                        ],
-                        'parent_attributes' => [
-                            'class' => 'nav-item',
-                        ],
+                        'icon' => null,
+                        'attributes' => [],
+                        'parent_attributes' => [],
                         'children' => [],
                         'depth' => 1,
                     ],
@@ -68,12 +59,9 @@ return [
                         'url' => '/contact-us',
                         'permission' => null,
                         'active' => true,
-                        'attributes' => [
-                            'class' => 'nav-link',
-                        ],
-                        'parent_attributes' => [
-                            'class' => 'nav-item',
-                        ],
+                        'icon' => null,
+                        'attributes' => [],
+                        'parent_attributes' => [],
                         'children' => [],
                         'depth' => 1,
                     ],
@@ -88,12 +76,9 @@ return [
                 'url' => '/dashboard',
                 'permission' => 'user.signed.in',
                 'active' => true,
-                'attributes' => [
-                    'class' => 'nav-link',
-                ],
-                'parent_attributes' => [
-                    'class' => 'nav-item',
-                ],
+                'icon' => null,
+                'attributes' => [],
+                'parent_attributes' => [],
                 'children' => [],
                 'depth' => 0,
             ],
@@ -103,12 +88,9 @@ return [
                 'url' => '/users',
                 'permission' => 'admin.users.index',
                 'active' => true,
-                'attributes' => [
-                    'class' => 'nav-link',
-                ],
-                'parent_attributes' => [
-                    'class' => 'nav-item',
-                ],
+                'icon' => null,
+                'attributes' => [],
+                'parent_attributes' => [],
                 'children' => [
                     [
                         'title' => __('Users'),
@@ -116,12 +98,9 @@ return [
                         'url' => '/list',
                         'permission' => 'admin.users.list',
                         'active' => true,
-                        'attributes' => [
-                            'class' => 'nav-link',
-                        ],
-                        'parent_attributes' => [
-                            'class' => 'nav-item',
-                        ],
+                        'icon' => null,
+                        'attributes' => [],
+                        'parent_attributes' => [],
                         'children' => [],
                         'depth' => 1,
                     ],
@@ -131,12 +110,9 @@ return [
                         'url' => 'admin.users.create',
                         'permission' => 'admin.users.create',
                         'active' => false,
-                        'attributes' => [
-                            'class' => 'nav-link',
-                        ],
-                        'parent_attributes' => [
-                            'class' => 'nav-item',
-                        ],
+                        'icon' => null,
+                        'attributes' => [],
+                        'parent_attributes' => [],
                         'children' => [],
                         'depth' => 1,
                     ],
@@ -151,12 +127,9 @@ return [
                 'url' => '#',
                 'permission' => null,
                 'active' => true,
-                'attributes' => [
-                    'class' => 'nav-link',
-                ],
-                'parent_attributes' => [
-                    'class' => 'nav-item',
-                ],
+                'icon' => null,
+                'attributes' => [],
+                'parent_attributes' => [],
                 'children' => [],
                 'depth' => 0,
             ],
@@ -168,12 +141,9 @@ return [
                 'url' => 'home',
                 'permission' => null,
                 'active' => true,
-                'attributes' => [
-                    'class' => 'nav-link',
-                ],
-                'parent_attributes' => [
-                    'class' => 'nav-item',
-                ],
+                'icon' => null,
+                'attributes' => [],
+                'parent_attributes' => [],
                 'children' => [],
                 'depth' => 0,
             ],
@@ -183,12 +153,9 @@ return [
                 'url' => 'home.about',
                 'permission' => null,
                 'active' => true,
-                'attributes' => [
-                    'class' => 'nav-link',
-                ],
-                'parent_attributes' => [
-                    'class' => 'nav-item',
-                ],
+                'icon' => null,
+                'attributes' => [],
+                'parent_attributes' => [],
                 'children' => [],
                 'depth' => 0,
             ],
@@ -200,12 +167,9 @@ return [
                 'url' => 'home',
                 'permission' => null,
                 'active' => true,
-                'attributes' => [
-                    'class' => 'nav-link',
-                ],
-                'parent_attributes' => [
-                    'class' => 'nav-item',
-                ],
+                'icon' => null,
+                'attributes' => [],
+                'parent_attributes' => [],
                 'children' => [],
                 'depth' => 0,
             ],
@@ -215,12 +179,9 @@ return [
                 'url' => 'home.about',
                 'permission' => null,
                 'active' => true,
-                'attributes' => [
-                    'class' => 'nav-link',
-                ],
-                'parent_attributes' => [
-                    'class' => 'nav-item',
-                ],
+                'icon' => null,
+                'attributes' => [],
+                'parent_attributes' => [],
                 'children' => [],
                 'depth' => 0,
             ],
@@ -232,12 +193,9 @@ return [
                 'url' => 'dashboard.profile',
                 'permission' => null,
                 'active' => true,
-                'attributes' => [
-                    'class' => 'nav-link',
-                ],
-                'parent_attributes' => [
-                    'class' => 'nav-item',
-                ],
+                'icon' => null,
+                'attributes' => [],
+                'parent_attributes' => [],
                 'children' => [],
                 'depth' => 0,
             ],
@@ -247,12 +205,9 @@ return [
                 'url' => 'dashboard.inbox',
                 'permission' => 'dashboard.inbox',
                 'active' => true,
-                'attributes' => [
-                    'class' => 'nav-link',
-                ],
-                'parent_attributes' => [
-                    'class' => 'nav-item',
-                ],
+                'icon' => null,
+                'attributes' => [],
+                'parent_attributes' => [],
                 'children' => [],
                 'depth' => 0,
             ],

@@ -12,6 +12,8 @@ final class LaraNavServiceProvider extends ServiceProvider
 {
     public static string $LNav_Path;
 
+    private string $publishGenericName = 'laranav-install';
+
     public function boot()
     {
         self::$LNav_Path = config('laranav.default.directory', 'LaraNav');
@@ -19,24 +21,27 @@ final class LaraNavServiceProvider extends ServiceProvider
         $this->registerTranslations();
         $this->loadLaraNavDataOnViewPages();
 
-        $publishes = [
-            // configuration
-            __DIR__.'/../Config/laranav.php' => config_path('laranav.php'),
-
+        // CONFIGURATION
+        $this->publishes([
+            __DIR__ . '/../Config/laranav.php' => config_path('laranav.php'),
             // Service
-            __DIR__.'/../Stub/LNavService.php' => app_path(sprintf('Http/Controllers/LaraNav/LNavService.php')),
+            __DIR__ . '/../Stub/LNavService.php' => app_path(sprintf('Http/Controllers/LaraNav/LNavService.php')),
+        ], [$this->publishGenericName, 'laranav-config']);
 
-            // Resources
-            __DIR__.sprintf('/../Resource/layouts') => resource_path(sprintf('views/%s/layouts', self::$LNav_Path)),
-
-        ];
-        $this->publishes($publishes);
+        // RESOURCE PurpleAdmin
+        $this->publishes([
+            __DIR__ . sprintf('/../Resource/theme/PurpleAdmin') => resource_path(sprintf('views/%s/PurpleAdmin', self::$LNav_Path)),
+        ], [$this->publishGenericName, 'laranav-view-PurpleAdmin']);
     }
 
     private function loadLaraNavDataOnViewPages()
     {
         view()->composer('*', function ($view) {
-            View::share([]);
+            View::share([
+                'ln' => [
+                    'nav' => config('laranav.nav')
+                ],
+            ]);
         });
     }
 
